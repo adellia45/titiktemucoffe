@@ -30,10 +30,15 @@ body {
   background-color: rgb(1, 1, 1, 0.8);
   border-bottom: 1px solid #513c28;
   position: fixed;
+  transform: translateX(100);
   top: 0;
   left: 0;
   right: 0;
   z-index: 9999;
+}
+.nav-menu.active{
+  transform: translateX(0);
+  display: block;
 }
 
 .navbar .navbar-logo {
@@ -78,7 +83,7 @@ body {
 }
 /*nav search form*/
 .navbar .search-form{
-  position: absolute;
+  position: fixed;
   top: 100%;
   right: 7%;
   background-color: #fff;
@@ -305,7 +310,7 @@ right: 0;
 .products .product-card{
   text-align: center;
   border: 1px solid #666;
-  padding:;
+  padding: 0;
 }
 .products .product-icons{
   display: flex;
@@ -498,7 +503,7 @@ footer .creadit a{
     display: inline-block;
   }
   .navbar .navbar-nav {
-    position: absolute;
+    position: fixed;
     top: 100%;
     right: -100%;
     background-color: #fff;
